@@ -1,0 +1,143 @@
+/* ===============================
+   STAFF DASHBOARD – CLEAN UI
+   =============================== */
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+    background: #DDE6ED;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background: #27374D;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.sidebar h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    margin-bottom: 6px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.sidebar a:hover {
+    background: #526D82;
+}
+
+/* Main */
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    background: #ffffff;
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #27374D;
+}
+
+.header span {
+    font-size: 13px;
+    color: #526D82;
+}
+
+/* Cards */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.card h4 {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #27374D;
+}
+
+.card p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #27374D;
+}
+
+.recent-sales {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.recent-sales h4 {
+    margin-bottom: 12px;
+    font-size: 15px;
+    color: #27374D;
+}
+
+/* Table */
+.recent-sales table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+/* Header */
+.recent-sales th {
+    background: #27374D;
+    color: #ffffff;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Cells */
+.recent-sales td {
+    padding: 10px;
+    border-bottom: 1px solid #DDE6ED;
+}
+
+/* Column widths & alignment */
+.recent-sales th:nth-child(1),
+.recent-sales td:nth-child(1) { width: 15%; }
+
+.recent-sales th:nth-child(2),
+.recent-sales td:nth-child(2) { width: 25%; }
+
+.recent-sales th:nth-child(3),
+.recent-sales td:nth-child(3) { width: 25%; }
+
+.recent-sales th:nth-child(4),
+.recent-sales td:nth-child(4) {
+    width: 10%;
+    text-align: center;
+}
+
+.recent-sales th:nth-child(5),
+.recent-sales td:nth-child(5) {
+    width: 25%;
+    text-align: right;
+}

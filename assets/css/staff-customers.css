@@ -1,0 +1,173 @@
+/* ===============================
+   STAFF CUSTOMERS – CLEAN UI
+   =============================== */
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+    background: #DDE6ED;
+}
+
+/* Sidebar (reuse same staff sidebar look) */
+.sidebar {
+    width: 220px;
+    background: #27374D;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.sidebar h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    margin-bottom: 6px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.sidebar a:hover {
+    background: #526D82;
+}
+
+/* Main */
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    background: #ffffff;
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #27374D;
+}
+
+/* Layout */
+.customer-layout {
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+/* Form Card */
+.customer-form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.customer-form h3 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #27374D;
+}
+
+.customer-form .form-group {
+    margin-bottom: 12px;
+}
+
+.customer-form label {
+    font-size: 13px;
+    color: #27374D;
+}
+
+.customer-form input {
+    width: 100%;
+    padding: 8px;
+    font-size: 13px;
+    border: 1px solid #9DB2BF;
+    border-radius: 4px;
+}
+
+/* Button */
+.customer-form .btn {
+    margin-top: 10px;
+    background: #27374D;
+    color: #ffffff;
+    padding: 8px 14px;
+    font-size: 13px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.customer-form .btn:hover {
+    opacity: 0.9;
+}
+
+/* Table Card */
+.customer-table {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.customer-table h3 {
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #27374D;
+}
+
+.customer-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.customer-table th {
+    background: #27374D;
+    color: #ffffff;
+    padding: 10px;
+    text-align: left;
+}
+
+.customer-table td {
+    padding: 10px;
+    border-bottom: 1px solid #DDE6ED;
+}
+
+/* Remove underline completely */
+.customer-table a {
+    text-decoration: none !important;
+}
+
+/* Edit button */
+.customer-table .btn-edit {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 13px;
+    background: #27374D;
+    color: #ffffff !important;
+    border-radius: 4px;
+    text-align: center;
+    min-width: 60px;
+}
+
+/* Hover */
+.customer-table .btn-edit:hover {
+    background: #526D82;
+    text-decoration: none;
+}
+
+/* Action column alignment */
+.customer-table td:last-child {
+    text-align: center;
+}
+

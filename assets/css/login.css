@@ -1,0 +1,101 @@
+body {
+    background: linear-gradient(135deg, #DDE6ED, #9DB2BF) !important;
+}
+
+/* Wrapper */
+.login-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card */
+.login-card {
+    background: #ffffff;
+    width: 380px;
+    padding: 35px 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(39,55,77,0.15);
+}
+
+.login-card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 22px;
+    color: #27374D;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #526D82;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #9DB2BF;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-group input:focus {
+    border-color: #526D82;
+}
+
+.password-box {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 38px;
+    font-size: 13px;
+    color: #526D82;
+    cursor: pointer;
+}
+
+/* Role buttons */
+.role-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.role-btn {
+    flex: 1;
+    position: relative;
+}
+
+.role-btn input {
+    display: none;
+}
+
+.role-btn span {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #9DB2BF;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #27374D;
+    cursor: pointer;
+}
+
+.role-btn input:checked + span {
+    background: #27374D;
+    color: #ffffff;
+    border-color: #27374D;
+}
+
+.login-btn {
+    width: 100%;
+    margin-top: 10px;
+}

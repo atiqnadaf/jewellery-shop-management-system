@@ -1,0 +1,81 @@
+.reports-wrapper {
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+/* Table */
+.reports-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;            /* 🔒 KEY FIX */
+    font-size: 13px;
+}
+
+/* Header */
+.reports-table th {
+    background: #27374D;
+    color: #ffffff;
+    padding: 10px;
+    text-align: left;
+    font-weight: 600;
+}
+
+/* Cells */
+.reports-table td {
+    padding: 10px;
+    border-bottom: 1px solid #DDE6ED;
+    vertical-align: middle;
+}
+
+/* Hover */
+.reports-table tr:hover {
+    background: #F5F7FA;
+}
+
+/* Column alignment */
+.reports-table th:nth-child(1),
+.reports-table td:nth-child(1) {
+    width: 40px;
+    text-align: center;
+}
+
+.reports-table th:nth-child(5),
+.reports-table td:nth-child(5) {
+    text-align: center;             /* Qty */
+}
+
+.reports-table th:nth-child(6),
+.reports-table td:nth-child(6) {
+    text-align: right;              /* Amount */
+    font-weight: 600;
+}
+
+.reports-table th:nth-child(7),
+.reports-table td:nth-child(7) {
+    text-align: center;             /* Sold By */
+}
+
+/* Filters */
+.reports-filters {
+    display: flex;
+    gap: 16px;
+    align-items: end;
+    background: #ffffff;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+}
+
+.reports-filters label {
+    font-size: 12px;
+    color: #526D82;
+}
+
+.reports-filters input,
+.reports-filters select {
+    padding: 6px;
+    font-size: 13px;
+}
